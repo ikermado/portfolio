@@ -3,221 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Iker Marin | Designer</title>
     <script src="https://kit.fontawesome.com/db8db688b1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css"> <!-- ACTUALIZAR LINK ARCHIVO CSS -->
+    <link rel="stylesheet" href="/css/index.css">
 </head>
+
 
 <body>
 
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="site-title display-f pr-2 pt-05 pb-05"><a href="index.html">I.M</a></div>
-        <input type="checkbox" id="click">
-        <label for="click" class="ham-button">
+    <!-- NAVBAR --> 
+    <div class="topnav" id="myTopnav">
+        <a class="topnav-btn-home" href="index.html" class="active">i.m</a>
+        <div class="topnav-container">
+            <a class="topnav-btn" href="index.html">work</a>
+            <a class="topnav-btn" href="about.html">about</a>
+            <a class="topnav-btn-l" href="mailto:ikermado@gmail.com">contact</a>
+            <a href="javascript:void(0);" class="topnav-ham" onclick="myFunction()">
             <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul class="navbar-container">
-            <li class="nav-button"><a href="index.html">work</a></li>
-            <li class="nav-button"><a href="about.html">about</a></li>
-            <li class="nav-button"><a href="mailto:ikermado@gmail.com">contact</a></li>
-        </ul>
-    </div>
-
-    <!-- header --> <!--FALTA IMAGEN DE FONDO-->
-    <div class="index-header-img-1">
-        <img src="img/index/profile-index-1.jpg" alt="infuser">
-    </div>
-    <div class="index-header-img-2">
-        <img src="img/index/profile-index-1.jpg" alt="infuser">
-    </div>
-    <div class="container">
-        <div class="header">
-            <div class="col-12-xs col-12-m">
-                <p class="header-title mb-4">Hey, I'm Iker</p>
-            </div>
-            <div class="col-12-xs col-7-s">
-                <p class="font-f-secondary font-s-24 font-w-400 mb-4">I'm a versatile designer who aims to design user experiences from a strategic, usable and human approach.</p>
-            </div>
-            <div class="header-button button-transparent-black95 font-f-primary font-s-15 font-w-700 ">
-                <a class="mr-1" href="#project-title"><p>Check my work</p></a>
-                <i class="fa-solid fa-arrow-down fa-bounce"></i>
-            </div>
+            </a>
         </div>
     </div>
 
-    <!-- WORK -->
-    <div class="container">
+    <div class="body">
 
-        <h5 id="project-title" class="font-s-24 font-f-primary">\ Projects</h5>
-
-        <div class="row justify-center">
-
-            <div class="card col-12-xs col-12-m">
-                <div class="card-text col-12-xs col-5-m">
-                    <h3 class="font-f-primary">Zutabe</h3>
-                    <p class="font-f-secondary font-s-18">Designing a new service to promote a community model of cohabitation between the elderly and young people as a way of mitigating unwanted loneliness.</p>
-                    <div class="card-tag">
-                        <div class="tag-white95 font-f-primary font-s-15">UX research</div>
-                        <div class="tag-white95 font-f-primary font-s-15">UI design</div>
-                    </div>
-                    <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
-                        <a class="mr-1" href="#"><p>View project</p></a>
-                        <i class="icon fa-solid fa-arrow-right"></i>
-                    </div>
+        <!-- HEADER --> <!--FALTA IMAGEN DE FONDO-->
+        <div class="index-header-img-1">
+            <img src="img/index/profile-index-1.jpg" alt="infuser">
+        </div>
+        <div class="index-header-img-2">
+            <img src="img/index/profile-index-1.jpg" alt="infuser">
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="col-12-xs col-12-m">
+                    <p class="header-title mb-4">Hey, I'm Iker</p>
                 </div>
-                <div class="card-img col-12-xs col-6-m">
-                    <a href="#">
-                        <img class="br-s" src="img/index/zutabe-index.jpg" alt="uneoro">
-                    </a>
+                <div class="col-12-xs col-7-s">
+                    <p class="font-f-secondary font-s-24 font-w-400 mb-4">I'm a versatile designer who aims to design user experiences from a strategic, usable and human approach.</p>
                 </div>
-            </div>
-
-            <div class="card-reverse col-12-xs col-12-m">
-                <div class=" card-text col-12-xs col-5-m">
-                    <h3 class="font-f-primary">Telefónica</h3>
-                    <p class="font-f-secondary font-s-18">Pair of plug-ins that can be integrated into the work calendar to generate social encounters and improve asynchronous communication between colleagues.</p>
-                    <div class="card-tag">
-                        <div class="tag-white95 font-f-primary font-s-15">UX research</div>
-                        <div class="tag-white95 font-f-primary font-s-15">UI design</div>
-                    </div>
-                    <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
-                        <a class="mr-1" href="#"><p>View project</p></a>
-                        <i class="icon fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="card-img col-12-xs col-6-m">
-                    <a href="#">
-                        <img class="br-s" src="img/index/telefonica-index.jpg" alt="uneoro">
-                    </a>
-                </div>
-            </div>
-
-            <div class="card col-12-xs col-12-m">
-                <div class=" card-text col-12-xs col-5-m">
-                    <h3 class="font-f-primary">Uneoro</h3>
-                    <p class="font-f-secondary font-s-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur est reiciendis quam doloribus, ratione blanditiis.</p>
-                    <div class="card-tag">
-                        <div class="tag-white95 font-f-primary font-s-15">UX research</div>
-                        <div class="tag-white95 font-f-primary font-s-15">UI design</div>
-                    </div>
-                    <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
-                        <a class="mr-1" href="#"><p>View project</p></a>
-                        <i class="icon fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="card-img col-12-xs col-6-m">
-                    <a href="#">
-                        <img class="br-s bg-orange" src="img/index/uneoro-index.jpg" alt="uneoro">
-                    </a>
-                </div>
-            </div>
-
-            <div class="card-reverse col-12-xs col-12-m">
-                <div class="card-text col-12-xs col-5-m">
-                    <h3 class="font-f-primary">Usabal App</h3>
-                    <p class="font-f-secondary font-s-18">Digital solution for management of user bookings, courses and COVID-19 tracking for a sports centre.</p>
-                    <div class="card-tag">
-                        <div class="tag-white95 font-f-primary font-s-15">UX research</div>
-                        <div class="tag-white95 font-f-primary font-s-15">UI design</div>
-                    </div>
-                    <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
-                        <a class="mr-1" href="#"><p>View project</p></a>
-                        <i class="icon fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="card-img col-12-xs col-6-m">
-                    <a href="#">
-                        <img class="br-s" src="img/index/usabal-index.jpg" alt="uneoro">
-                    </a>
+                <div class="header-button button-transparent-black95 font-f-primary font-s-15 font-w-700 ">
+                    <a class="mr-1" href="#project-title"><p>Check my work</p></a>
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
                 </div>
             </div>
         </div>
 
-    </div>
+        <!-- WORK -->
+        <div class="container">
 
-    <!-- WORK GALLERY -->
-    <div class="container">
+            <h5 id="project-title" class="font-s-24 font-f-primary">\ Projects</h5>
 
-        <h5 class="font-s-24 font-f-primary">\ Work gallery</h5>
+            <div class="row justify-center">
 
-        <div class="container-project justify-space-between">
-            
-            <div class="row-project col-6-xs">
-
-                <div class="card-2">
-                    <div class="img-s">
-                        <img class="br-s" src="img/work_gallery/danobat-smart-grinding.jpg" alt="">
+                <div class="card col-12-xs col-12-m">
+                    <div class="card-text col-12-xs col-5-m">
+                        <h3 class="font-f-primary">Zutabe</h3>
+                        <p class="font-f-secondary font-s-18">Designing an intergenerational housing service to mitigate unwanted loneliness in senior adults and support the emancipation of young individuals.</p>
+                        <div class="card-tag">
+                            <div class="tag-white95 font-f-primary font-s-15">UX research</div>
+                            <div class="tag-white95 font-f-primary font-s-15">UI design</div>
+                        </div>
+                        <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
+                            <a class="mr-1" href="#"><p>View project</p></a>
+                            <i class="icon fa-solid fa-arrow-right"></i>
+                        </div>
                     </div>
-                    <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Danobat Smart Grinding</h3>
-                    <div class="card-tag mt-4">
-                        <div class="tag-white95 font-f-primary font-s-15">UX research</div>
-                        <div class="tag-white95 font-f-primary font-s-15">UI design</div>
-                    </div>
-                </div>
-
-                <div class="card-2">
-                    <div class="img-l">
-                        <img class="br-s" src="img/work_gallery/infuser.jpg" alt="">
-                    </div>
-                    <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Infuser bottle</h3>
-                    <div class="card-tag mt-4">
-                        <div class="tag-white95 font-f-primary font-s-15">Product design</div>
+                    <div class="card-img col-12-xs col-6-m">
+                        <a href="#">
+                            <img class="br-s" src="img/index/zutabe-index.jpg" alt="uneoro">
+                        </a>
                     </div>
                 </div>
 
+                <div class="card-reverse col-12-xs col-12-m">
+                    <div class=" card-text col-12-xs col-5-m">
+                        <h3 class="font-f-primary">Telefónica</h3>
+                        <p class="font-f-secondary font-s-18">Plug-ins that can be integrated into the work calendar to generate social encounters and improve asynchronous communication between colleagues.</p>
+                        <div class="card-tag">
+                            <div class="tag-white95 font-f-primary font-s-15">UX research</div>
+                            <div class="tag-white95 font-f-primary font-s-15">UI design</div>
+                        </div>
+                        <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
+                            <a class="mr-1" href="#"><p>View project</p></a>
+                            <i class="icon fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-img col-12-xs col-6-m">
+                        <a href="#">
+                            <img class="br-s" src="img/index/telefonica-index.jpg" alt="uneoro">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card col-12-xs col-12-m">
+                    <div class=" card-text col-12-xs col-5-m">
+                        <h3 class="font-f-primary">Uneoro</h3>
+                        <p class="font-f-secondary font-s-18">Designing a new food service for secondary school canteens with a digital component.</p>
+                        <div class="card-tag">
+                            <div class="tag-white95 font-f-primary font-s-15">UX research</div>
+                            <div class="tag-white95 font-f-primary font-s-15">UI design</div>
+                        </div>
+                        <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
+                            <a class="mr-1" href="#"><p>View project</p></a>
+                            <i class="icon fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-img col-12-xs col-6-m">
+                        <a href="#">
+                            <img class="br-s bg-orange" src="img/index/uneoro-index.jpg" alt="uneoro">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-reverse col-12-xs col-12-m">
+                    <div class="card-text col-12-xs col-5-m">
+                        <h3 class="font-f-primary">Usabal App</h3>
+                        <p class="font-f-secondary font-s-18">Digital solution for a sports centre to manage user bookings, courses and COVID-19 tracking.</p>
+                        <div class="card-tag">
+                            <div class="tag-white95 font-f-primary font-s-15">UX research</div>
+                            <div class="tag-white95 font-f-primary font-s-15">UI design</div>
+                        </div>
+                        <div class="button-transparent-black95 font-f-primary font-s-15 font-w-700">
+                            <a class="mr-1" href="#"><p>View project</p></a>
+                            <i class="icon fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-img col-12-xs col-6-m">
+                        <a href="#">
+                            <img class="br-s" src="img/index/usabal-index.jpg" alt="uneoro">
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="row-project justify-space-between col-6-xs">
+        </div>
 
-                <div class="card-2">
-                    <div class="img-l">
-                        <img class="br-s" src="img/work_gallery/infuser.jpg" alt="">
+        <!-- WORK GALLERY -->
+        <div class="container">
+
+            <h5 class="font-s-24 font-f-primary">\ Work gallery</h5>
+
+            <div class="container-project justify-space-between">
+                
+                <div class="row-project col-6-xs">
+
+                    <div class="card-2">
+                        <div class="img-s">
+                            <img class="br-s" src="img/work_gallery/work-gallery-danobat-2.jpg" alt="">
+                        </div>
+                        <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Smart Grinding app</h3>
+                        <div class="card-tag mt-4">
+                            <div class="tag-white95 font-f-primary font-s-15">Danobat</div>
+                            <div class="tag-white95 font-f-primary font-s-15">UX research</div>
+                            <div class="tag-white95 font-f-primary font-s-15">UI design</div>
+                        </div>
                     </div>
-                    <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Flaske infuser bottle</h3>
-                    <div class="card-tag mt-4">
-                        <div class="tag-white95 font-f-primary font-s-15">Product design</div>
+
+                    <div class="card-2">
+                        <div class="img-l">
+                            <img class="br-s" src="img/work_gallery/work-gallery-heating.jpg" alt="">
+                        </div>
+                        <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Infuser bottle</h3>
+                        <div class="card-tag mt-4">
+                            <div class="tag-white95 font-f-primary font-s-15">Product design</div>
+                        </div>
                     </div>
+
                 </div>
 
-                <div class="card-2">
-                    <div class="img-s">
-                        <img class="br-s" src="img/work_gallery/infuser.jpg" alt="">
+                <div class="row-project justify-space-between col-6-xs">
+
+                    <div class="card-2">
+                        <div class="img-l">
+                            <img class="br-s" src="img/work_gallery/work-gallery-infuser.jpg" alt="">
+                        </div>
+                        <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Infuser bottle</h3>
+                        <div class="card-tag mt-4">
+                            <div class="tag-white95 font-f-primary font-s-15">Product design</div>
+                        </div>
                     </div>
-                    <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">Project</h3>
-                    <div class="card-tag mt-4">
-                        <div class="tag-white95 font-f-primary font-s-15">UX research</div>
-                        <div class="tag-white95 font-f-primary font-s-15">UI design</div>
+
+                    <div class="card-2">
+                        <div class="img-s">
+                            <img class="br-s" src="img/work_gallery/work-gallery-jumbo.jpg" alt="">
+                        </div>
+                        <h3 class="font-f-primary font-s-24 font-w-800 mr-4 mt-4">JUMBO packaging design</h3>
+                        <div class="card-tag mt-4">
+                            <div class="tag-white95 font-f-primary font-s-15">GB Foods</div>
+                            <div class="tag-white95 font-f-primary font-s-15">Product Design</div>
+                            <div class="tag-white95 font-f-primary font-s-15">Branding</div>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
-
-    <!-- FOOTER -->
-    <div class="container mt-5 mb-10">
-            <div class="row col-12-xs col-12-m justify-space-between mb-5">
-                <div class="col-12-xs col-6-m">
-                    <p class="font-f-secondary font-s-24 font-w-400">Always down to collaborate when I have time. I'm hoping to further my career.</p>        
+        <!-- FOOTER -->
+        <div class="container mt-5 mb-10">
+                <div class="row col-12-xs col-12-m justify-space-between mb-5">
+                    <div class="col-12-xs col-6-m">
+                        <p class="font-f-secondary font-s-24 font-w-400">Always down to collaborate when I have time. I'm hoping to further my career.</p>        
+                    </div>
+                    <div class="row footer">
+                        <p class="font-f-primary font-s-24 font-w-800"><a href="mailto:ikermado@gmail.com">ikermado@gmail.com</a></p>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
                 </div>
-                <div class="row footer">
-                    <p class="font-f-primary font-s-24 font-w-800"><a href="mailto:ikermado@gmail.com">ikermado@gmail.com</a></p>
-                    <img src="" alt="">
-                    <img src="" alt="">
+
+                <hr>
+
+                <div class="copyright col-12-xs col-12-m mt-3 font-f-secondary font-s-16 font-w-400">
+                    <p class="mb-3">This web is hand-crafted by Iker Marin.</p>
+                    <p>Copyright <span>&copy</span> Iker Marin</p>
+                    <p>Icons from Font Awesome. Some photos from Unsplash</p>
                 </div>
-            </div>
-
-            <hr>
-
-            <div class="copyright col-12-xs col-12-m mt-3 font-f-secondary font-s-16 font-w-400">
-                <p class="mb-3">This web is hand-crafted by Iker Marin.</p>
-                <p>Copyright <span>&copy</span> Iker Marin</p>
-                <p>Icons of Font Awesome. Some photos from Unsplash</p>
-            </div>
+        </div>
     </div>
+        
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
