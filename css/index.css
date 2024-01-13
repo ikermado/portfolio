@@ -501,6 +501,20 @@ img {
   margin: 0 8px 0 0;
 }
 
+.topButton {
+  display: none;
+  position: fixed;
+  bottom: 2.5vh;
+  right: 5vh;
+  z-index: 9999;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #666666;
+}
+.topButton:hover {
+  color: #0D0D0D;
+}
+
 .topnav {
   overflow: hidden;
   z-index: 999;
