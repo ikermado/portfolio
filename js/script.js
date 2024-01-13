@@ -9,76 +9,39 @@ function myFunction() {
   }
 }
 
-//IMAGE MODAL
-
-// create references to the modal...
-var modal = document.getElementById('my-modal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('img-01');
-// the image in the modal
-var modalImg = document.getElementById("modal-img");
-// and the caption in the modal
-// var captionText = document.getElementById("caption");
-
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-var span = document.getElementsByClassName("modal-button-close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal-button-close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-var span = document.getElementsByClassName("modal-button-close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
 
 
 //IMAGE CAROUSEL
 
-let slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = [1,1,1,1,1];
+var slideId = ["slide-1", "slide-2", "slide-3", "slide-4", "slide-5"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("sl-slideshow");
-  let dots = document.getElementsByClassName("sl-dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  var dots = document.getElementsByClassName("sl-dot");
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+
+  x[slideIndex[no]-1].style.display = "block";  
+  dots[slideIndex[no]-1].className += " active";
 }
