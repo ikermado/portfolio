@@ -1146,22 +1146,22 @@ html {
 .header-project .header-tag {
   display: block;
 }
-.header-project .header-info h6 {
-  display: inline;
+.header-project .header-info {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
 }
 @media (min-width: 768px) {
-  .header-project .header-info h6 {
+  .header-project .header-info {
     display: block;
   }
 }
-.header-project .header-info p {
-  margin-left: 16px;
-  display: inline;
+.header-project .header-info h6 {
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
-  .header-project .header-info p {
-    display: block;
-    margin-left: 0;
+  .header-project .header-info h6 {
+    margin-bottom: 16px;
   }
 }
 .header-project .img-header-project {
