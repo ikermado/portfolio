@@ -452,10 +452,12 @@ img {
 .button-outlined-black95 p {
   margin: 0 8px 0 0;
 }
-.button-outlined-black95:hover {
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
-  background-color: #0D0D0D;
-  color: #F2F2F2;
+@media (min-width: 768px) {
+  .button-outlined-black95:hover {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+  }
 }
 
 .button-transparent-black95 {
