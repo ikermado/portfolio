@@ -41,10 +41,12 @@ img {
   margin: 0;
   box-sizing: border-box;
   gap: 16px;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .container-project {
     gap: 64px;
+    margin-bottom: 64px;
   }
 }
 
@@ -68,10 +70,6 @@ img {
 .img-container {
   width: 100%;
   height: 100%;
-}
-
-.justify-flex-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -135,11 +133,6 @@ img {
     flex-grow: 0;
     width: 66.6666666667%;
   }
-  .col-10-m {
-    box-sizing: border-box;
-    flex-grow: 0;
-    width: 83.3333333333%;
-  }
   .col-12-m {
     box-sizing: border-box;
     flex-grow: 0;
@@ -156,6 +149,11 @@ img {
     box-sizing: border-box;
     flex-grow: 0;
     width: 58.3333333333%;
+  }
+  .col-9-l {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
   }
 }
 
@@ -182,7 +180,7 @@ img {
   .card {
     padding: 1.5rem;
     flex-direction: row;
-    margin-bottom: 208px;
+    margin-bottom: 200px;
     justify-content: space-between;
     gap: 0;
   }
@@ -226,7 +224,7 @@ img {
 }
 .card .card-img img {
   width: 100%;
-  height: 356px;
+  aspect-ratio: 8/5;
   object-fit: cover;
   transition: transform 0.5s; /* Animation */
 }
@@ -238,7 +236,7 @@ img {
 }
 @media (min-width: 1441px) {
   .card .card-img {
-    width: 564px;
+    max-height: 356px;
   }
 }
 
@@ -257,7 +255,7 @@ img {
   .card-reverse {
     padding: 1.5rem;
     flex-direction: row-reverse;
-    margin-bottom: 208px;
+    margin-bottom: 200px;
     justify-content: space-between;
     gap: 0;
   }
@@ -296,7 +294,7 @@ img {
 }
 .card-reverse .card-img img {
   width: 100%;
-  height: 356px;
+  aspect-ratio: 8/5;
   object-fit: cover;
   transition: transform 0.5s; /* Animation */
 }
@@ -308,7 +306,7 @@ img {
 }
 @media (min-width: 1441px) {
   .card-reverse .card-img {
-    width: 564px;
+    max-height: 356px;
   }
 }
 
@@ -643,9 +641,6 @@ img {
     padding: 1rem 1rem;
   }
 }
-.icon-header-project {
-  max-width: 62px;
-}
 
 .img-abt {
   width: 100%;
@@ -814,6 +809,10 @@ img {
   margin-right: 2rem;
 }
 
+.mt-2 {
+  margin-top: 1rem;
+}
+
 .mt-3 {
   margin-top: 1.5rem;
 }
@@ -836,6 +835,10 @@ img {
 
 .mt-15 {
   margin-top: 7.5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .mb-2 {
@@ -900,10 +903,6 @@ img {
 
 .font-s-32 {
   font-size: 2rem;
-}
-
-.font-s-64 {
-  font-size: 4rem;
 }
 
 .font-f-primary {
@@ -986,23 +985,21 @@ html {
 }
 @media (min-width: 768px) {
   .header-index {
-    height: 90vh;
+    height: 80vh;
     max-height: 678px;
-    margin-top: 120px;
+    margin-bottom: 120px;
   }
 }
 @media (min-width: 1200px) {
   .header-index {
-    height: 90vh;
+    height: 80vh;
     max-height: 1110px;
-    margin-top: 120px;
   }
 }
 @media (min-width: 1441px) {
   .header-index {
-    height: 90vh;
+    height: 80vh;
     max-height: 1350px;
-    margin-top: 120px;
   }
 }
 .header-index .header-title {
@@ -1185,12 +1182,12 @@ html {
 
 h5 {
   margin-bottom: 24px;
-  margin-top: 64px;
+  margin-top: 96px;
 }
 @media (min-width: 768px) {
   h5 {
     margin-bottom: 104px;
-    margin-top: 64px;
+    margin-top: 160px;
     margin-left: 24px;
   }
 }
