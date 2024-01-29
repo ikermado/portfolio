@@ -1004,7 +1004,7 @@ html {
 }
 @media (min-width: 480px) {
   .header-index .header-title {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 .header-index .header-button {
