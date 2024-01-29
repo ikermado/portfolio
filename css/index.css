@@ -1004,7 +1004,7 @@ html {
 }
 @media (min-width: 480px) {
   .header-index .header-title {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 .header-index .header-button {
@@ -1095,7 +1095,7 @@ html {
 }
 @media (min-width: 480px) {
   .header-abt .header-title {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 .header-abt .header-img {
